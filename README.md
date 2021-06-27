@@ -11,6 +11,11 @@ This is following the tutorial from https://ng-girls.gitbook.io/todo-list-tutori
 - `#variableName` can be used to store a reference to an element. For example `<input #inputElementRef />` and then `<button (click)="doAThing(inputElementRef.value)">Do</button>`
 - `ng g i interfaces/todo-item` for creating interfaces.
 - `ng g s services/todo-list` for creating services.
+- Event emitting:
+  - define on the component that generates it (`@Output()`)
+  - parent component `(output variable name)` it on component element
+  - parent component handles as needed
+  - see TodoItemComponent and ListManagerComponent
 
 ## Development server
 
