@@ -8,6 +8,7 @@ This is following the tutorial from https://ng-girls.gitbook.io/todo-list-tutori
 - `ng g c input-button-unit` is the same as `ng generate component input-button-unit`.
 - `input [value]` is one-way binding, while `input [(ngModel)]` can be one or two-way binding. The latter also adds a lot more functionality.
 - Element event binding = parens and dropping the `on`.
+- `#variableName` can be used to store a reference to an element. For example `<input #inputElementRef />` and then `<button (click)="doAThing(inputElementRef.value)">Do</button>`
 - `ng g i interfaces/todo-item` for creating interfaces.
 
 ## Development server
