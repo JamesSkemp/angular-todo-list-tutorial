@@ -29,6 +29,22 @@ export class TodoListService {
 
   addItem(item: TodoItem): void {
     this.todoList.push(item);
+    this.saveList();
+  }
+
+  updateItem(item: TodoItem, changes: any): void {
+    const index = this.todoList.indexOf(item);
+    this.todoList[index] = { ...item, ...changes };
+    this.saveList();
+  }
+
+  deleteItem(item: TodoItem): void {
+    const index = this.todoList.indexOf(item);
+    this.todoList.splice(index, 1);
+    this.saveList();
+  }
+
+  saveList(): void {
     this.storageService.setData(todoListStorageKey, this.todoList);
   }
 }
