@@ -5,7 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This is following the tutorial from https://ng-girls.gitbook.io/todo-list-tutorial/ in late June 2021.
 
 ## Tutorial notes
-- `ng g c input-button-unit` is the same as `ng generate component input-button-unit`
+- `ng g c input-button-unit` is the same as `ng generate component input-button-unit`.
+- `input [value]` is one-way binding, while `input [(ngModel)]` can be one or two-way binding. The latter also adds a lot more functionality.
+- Element event binding = parens and dropping the `on`.
 
 
 ## Development server

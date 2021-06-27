@@ -9,11 +9,12 @@ export class InputButtonUnitComponent implements OnInit {
   title = 'Hello World';
 
   constructor() {
-    this.title = 'Constructor Overrides Declaration';
   }
 
   ngOnInit(): void {
-    this.title = 'ngOnInit Overrides Constructor';
   }
 
+  changeTitle(newTitle: string): void {
+    this.title = newTitle;
+  }
 }
