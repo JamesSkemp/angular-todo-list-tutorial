@@ -10,6 +10,7 @@ This is following the tutorial from https://ng-girls.gitbook.io/todo-list-tutori
 - Element event binding = parens and dropping the `on`.
 - `#variableName` can be used to store a reference to an element. For example `<input #inputElementRef />` and then `<button (click)="doAThing(inputElementRef.value)">Do</button>`
 - `ng g i interfaces/todo-item` for creating interfaces.
+- `ng g s services/todo-list` for creating services.
 
 ## Development server
 
